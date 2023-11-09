@@ -8,12 +8,12 @@ const ContactList = ({ contacts, onDeleteContact }) => {
 
   return (
     <ul>
-      {contacts &&
-        contacts.map((contact) => (
-          <ContactDelete key={contact.id} contact={contact} onDeleteContact={onDeleteContact} />
-        ))}
+      {contacts.map((contact) => (
+        <ContactDelete key={contact.id} contact={contact} onDeleteContact={onDeleteContact} />
+      ))}
     </ul>
   );
 };
 
 export default ContactList;
+
